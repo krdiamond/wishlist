@@ -1,6 +1,5 @@
 body { 
-    font-family: Arial, sans-serif;
-    text-align: center;
+
     margin: 2rem;
     background-color: #f0f0f0;
     color: #333;
@@ -9,4 +8,37 @@ body {
   img {
     width: 200px;
     margin-top: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  img:hover {
+    transform: scale(1.25);
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .no-underline {
+    text-decoration: none;
+  }
+
+  .text-100 {
+    font-size: 100px;
+  }
+
+  .border {
+    border: 3px solid black;
+  }
+
+  .p-20 {
+    padding: 20px
+  }
+
+  .black {
+    color: black
   }
