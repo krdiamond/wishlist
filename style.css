@@ -6,17 +6,24 @@ body {
   }
   
   img {
-    width: 200px;
+    width: 100%;
     margin-top: 20px;
     transition: transform 0.3s ease;
   }
 
   img:hover {
-    transform: scale(1.25);
+    transform: scale(1.5);
   }
 
   .flex {
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .flex-item {
+    flex: 0 0 calc(25% - 1rem); /* 4 across, minus gap */
+    box-sizing: border-box;
   }
 
   .center {
@@ -35,9 +42,9 @@ body {
     border: 3px solid black;
   }
 
-  .p-20 {
-    padding: 20px
-  }
+  .p-2p {padding: 2%;}
+  .p-20 {padding: 20px}
+  .p-40 {padding: 40px}
 
   .black {
     color: black
